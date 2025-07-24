@@ -1,0 +1,78 @@
+.bookGuessing{
+  position: relative;
+  overflow: hidden;
+  top: 10px;
+  display: grid;
+  grid-template-rows: 2fr 4fr 1fr;
+  height: 600px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.485);
+  background-color: rgb(255, 255, 255);
+}
+.output{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  
+  
+}
+.output-top,
+.output-bottom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25%;
+  width: 95%;
+  background-color: rgb(158, 0, 126);
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.485);
+}
+
+.inputs{
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}      
+.input-left,
+.input-right{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  width: 45%;
+  height: 90%;
+  background-color: rgb(158, 0, 126);
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.485);
+}   
+.input-left-top,
+.input-left-bottom,
+.input-right-top,
+.input-right-bottom{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.get-book{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bookButtons{
+  height: 100%;
+  margin: 15px 5px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.485);
+  background-color: #F2A900;
+  border: 0;
+
+}
+.get-book-button{
+  background-color: rgb(158, 0, 126);
+  height: 50%;
+  width: 95%;
+  border: 0;border-radius: 3px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.485);
+}
