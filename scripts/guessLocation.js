@@ -13,10 +13,8 @@ export class GuessBookLoacation {
     let result = false;
     locationGuesst.forEach((locationGuesst) => {rendomBook === locationGuesst && (result = 1)});
     if (result){
-      document.querySelector('.js-output-book-code-resulet').innerHTML = 'Riktig';
       return true;
     }else{
-      document.querySelector('.js-output-book-code-resulet').innerHTML = 'Feil';
       return false;
     }
   }
@@ -75,5 +73,26 @@ export class Score {
   getCurrentScore() {
     return console.log(this);
   }
+
+  displayHTML(){
+    return document.querySelector('.js-output-book-code-resulet').innerHTML = `
+    <p>Riktig: ${this.right}</p>
+    <p>Feil: ${this.wrong}</p>
+    `;
+  }
 }
+
+export class ButtonColor {
+  addColor(buttonId, answer) {
+    if (answer){
+      document.getElementById(buttonId).classList.add("bookButtonsRight");
+    }else{
+      document.getElementById(buttonId).classList.add("bookButtonsWrong");
+    }
+  }
+  resetColor(buttonId) {
+    document.getElementById(buttonId).classList.remove('bookButtonsWrong');document.getElementById(buttonId).classList.remove('bookButtonsRight');
+  }
+}
+
 
