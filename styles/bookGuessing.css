@@ -7,18 +7,21 @@ button{
   top: 10px;
   display: grid;
   grid-template-rows: 2fr 4fr 1fr;
-  height: 600px;
+  height: 700px;
+  max-width: 550px;
   border-radius: 3px;
-  background-color: rgba(0, 0, 0, 0.321);
+  background-color: rgba(0, 0, 0, 0.215);
   box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.599);
 }
 .background-pic{
   position: absolute;
   object-fit: cover;
+  object-position: left;
   height: 100%;
   width: 100%;
   z-index: -1;
 }
+
 .output{
   display: flex;
   flex-direction: column;
@@ -50,9 +53,10 @@ button{
   justify-content: space-around;
   width: 45%;
   height: 90%;
-  background-color: #F2A900;
   border-radius: 3px;
-  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.485);
+  background-color: #0000009a;
+  box-shadow: 0px 0px 10px 0px rgba(40, 107, 94, 0.941);
+  overflow: hidden;
 }   
 .input-left-top,
 .input-left-bottom,
@@ -62,6 +66,7 @@ button{
   flex-direction: column;
   width: 30%;
   overflow: hidden;
+  z-index: 10;
 }
 .get-book{
   display: flex;
@@ -73,21 +78,34 @@ button{
   margin: 15px 5px;
   border-radius: 3px;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.515);
-  background-color: #888676;
+  background-color: #ffb300;
   color: #000000;
   border: 0;
 }
+.bookButtons:hover{
+  background-color: #c78b00;
+}
 .bookButtonsRight{
-  background-color: green;
+  background-color: rgb(41, 176, 41);
+}
+.bookButtonsRight:hover{
+  background-color: rgb(41, 176, 41);
 }
 .bookButtonsWrong{
-  background-color: red;
+  background-color: rgb(201, 17, 17);
+}
+.bookButtonsWrong:hover{
+  background-color: rgb(201, 17, 17);
 }
 .get-book-button{
   background-color: #ffb300;
   color: #000000;
   height: 50%;
   width: 95%;
-  border: 0;border-radius: 3px;
+  border: 0;
+  border-radius: 3px;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.485);
+}
+.get-book-button:hover{
+  background-color: #c78b00;
 }
