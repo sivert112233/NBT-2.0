@@ -7,7 +7,8 @@ button{
   top: 10px;
   display: grid;
   grid-template-rows: 2fr 4fr 1fr;
-  height: 500px;
+  min-height: 500px;
+  height: 90vh;
   max-width: 500px;
   border-radius: 3px;
   background-color: rgba(0, 0, 0, 0.215);
@@ -33,10 +34,10 @@ button{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 25%;
+  height: 30%;
   width: 95%;
   background-color: #F2A900;
-  border-radius: 3px;
+  border-radius: 5px;
   box-shadow: 0px 0px 5px 1px rgb(0, 0, 0);
 }
 .inputs{
@@ -50,13 +51,12 @@ button{
 .input-right{
   position: relative;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 45%;
   height: 90%;
-  border-radius: 3px;
+  border-radius: 10px;
   background-color: #0000009a;
   box-shadow: 0px 0px 10px 0px rgba(40, 107, 94, 0.941);
-  overflow: hidden;
 }   
 .input-left-top,
 .input-left-bottom,
@@ -65,8 +65,17 @@ button{
   display: flex;
   flex-direction: column;
   width: 30%;
-  overflow: hidden;
   z-index: 10;
+  margin: 10px;
+}
+.input-left-top{
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  gap: 10px;
+}
+.input-right-top{
+  display: grid;
+  gap: 10px;
 }
 .get-book{
   display: flex;
@@ -75,7 +84,6 @@ button{
 }
 .bookButtons{
   height: 100%;
-  margin: 15px 5px;
   border-radius: 3px;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.515);
   background-color: #ffb300;
@@ -101,7 +109,7 @@ button{
   background-color: #ffb300;
   color: #000000;
   height: 50%;
-  width: 95%;
+  width: 40%;
   border: 0;
   border-radius: 3px;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.485);
